@@ -1,0 +1,28 @@
+@-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("askubuntu.com"), domain("stackexchange.com"), domain("serverfault.com") {
+.js-dismissable-hero,       /* signup prompt */
+.s-sidebarwidget,           /* blog, meta questions */
+#hot-network-questions,     /* questions from other sites */
+.js-reactions,              /* clapper experiment */
+.s-notice,                  /* highly active question */
+#js-gdpr-consent-banner     /* gdpr banner */
+{
+    display: none;
+}
+
+/* contribute */
+.js-add-answer-component,   /* provide an answer box */
+#footer,                    /* footer */
+.bottom-notice, a[href='/questions/ask']   /* ask question */
+{
+    display: none;
+}
+
+/* left side navigation */
+#left-sidebar {display: none; }
+#content {border: 0px}
+
+/* advertising and broken search */
+.top-bar { display: none; }
+body { padding-top: 0px; }
+
+}
