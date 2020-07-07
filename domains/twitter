@@ -1,0 +1,37 @@
+@-moz-document url-prefix("https://twitter.com") {
+/* LEFT COLUMN NAVIGATION */
+header[role="banner"],                         /* HIDE ENTIRE COLUMN */
+[aria-label="Twitter"],                        /* logo */
+[data-testid="AppTabBar_Home_Link"],           /* home */
+[data-testid="AppTabBar_Explore_Link"],        /* explore */
+[data-testid="AppTabBar_Notifications_Link"],  /* notifications */
+[data-testid="AppTabBar_DirectMessage_Link"],  /* messages */
+[aria-label="Bookmarks"],                      /* bookmarks */
+[aria-label="Lists"],                          /* lists */
+[aria-label="Profile"],                        /* profile */
+[data-testid="AppTabBar_More_Menu"],           /* more */
+[aria-label="Tweet"],                          /* tweet */
+
+/* RIGHT COLUMN NAVIGATION */
+[data-testid="sidebarColumn"],                 /* HIDE ENTIRE COLUMN */
+[role="search"],[href="/search-advanced"],     /* search */
+[aria-label="Timeline: Trending now"],         /* trends */
+[aria-label="Who to follow"],                  /* who to follow */
+[aria-label="Relevant people"],                /* relevant people */
+[aria-label="Footer"],                         /* footer */
+
+/* CENTER COLUMN */
+[data-testid="primaryColumn"],                 /* HIDE ENTIRE COLUMN */
+[aria-label="Timeline: Your Home Timeline"],   /* timeline */
+[aria-label="Timeline: Conversation"]
+   > div > div > div:not(:first-child),        /* replies */
+
+/* Reactions */
+[data-testid="reply"],                         /* reply */
+[data-testid="retweet"],                       /* retweet */
+[data-testid="like"],[data-testid="unlike"],   /* like */
+[aria-label="Share Tweet"]                     /* share */
+{
+    display: none !important;
+}
+}
